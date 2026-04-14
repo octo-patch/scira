@@ -375,7 +375,8 @@ export const scira = customProvider({
       model: gateway('minimax/minimax-m2.1-lightning'),
       middleware,
     }),
-    'scira-minimax-m2.7': wrapLanguageModel({
+    'scira-minimax-m2.7': minimax.chatModel('MiniMax-M2.7'),
+    'scira-minimax-m2.7-highspeed': wrapLanguageModel({
       model: minimax.chatModel('MiniMax-M2.7-highspeed'),
       middleware,
     }),
